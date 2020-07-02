@@ -148,11 +148,13 @@ public class Controller implements Initializable {
                             // функция сохраняющая полученное сообщение в текст
 
 //                            try (BufferedOutputStream out = new BufferedOutputStream(
-//                                    new FileOutputStream("1/a.txt",true))) {
+//                                    new FileOutputStream("history_login.txt",true))) {
 //
 //                                out.write((str + "\n").getBytes());
 //                                out.flush();
 //                            }
+
+                            writeMsgToFile(loginField.getText().trim(), str);
 
                             textArea.appendText(str + "\n");
                         }
@@ -237,6 +239,19 @@ public class Controller implements Initializable {
 
     public void showRegWindow(ActionEvent actionEvent) {
         regStage.show();
+    }
+
+    public void writeMsgToFile(String login, String s) {
+        try (BufferedOutputStream out = new BufferedOutputStream(
+                new FileOutputStream("history_" + login + ".txt",true))) {
+
+            out.write((s + "\n").getBytes());
+            out.flush();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void tryRegistration(String login, String password ,String nickname){
