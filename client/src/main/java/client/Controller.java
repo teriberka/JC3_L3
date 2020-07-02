@@ -112,7 +112,21 @@ public class Controller implements Initializable {
                         if (str.startsWith("/authok ")) {
                             nick = str.split(" ")[1];
                             setAuthenticated(true);
+
+                            // задание 2 | ** После загрузки клиента показывать ему последние 100 строк истории чата.
+
+//                            try (FileInputStream fis = new FileInputStream("history_" + loginField.getText().trim() + ".txt");) {
+//                                byte[] arr = new byte[8192];
+//                                while (fis.read(arr) > 0) {
+//                                    System.out.print(new String(arr));
+//                                    textArea.appendText(new String(arr));
+//                                }
+//                            }
+
+                            readMsgFromFile(loginField.getText().trim());
+
                             break;
+
                         }
 
                         textArea.appendText(str + "\n");
@@ -145,7 +159,9 @@ public class Controller implements Initializable {
                             //==============//
 
                         } else {
-                            // функция сохраняющая полученное сообщение в текст
+                            // задание 1 Добавить в сетевой чат запись локальной истории в текстовый файл на клиенте.
+                            // Для каждой учетной записи файл с историей должен называться history_[login].txt.
+                            // (Например, history_login1.txt, history_user111.txt)
 
 //                            try (BufferedOutputStream out = new BufferedOutputStream(
 //                                    new FileOutputStream("history_login.txt",true))) {
@@ -241,12 +257,28 @@ public class Controller implements Initializable {
         regStage.show();
     }
 
+    // метод сохраняющая полученное сообщение в текстовый файл
     public void writeMsgToFile(String login, String s) {
         try (BufferedOutputStream out = new BufferedOutputStream(
                 new FileOutputStream("history_" + login + ".txt",true))) {
 
             out.write((s + "\n").getBytes());
             out.flush();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // метод вычитывающий сообщения из файлы
+    public void readMsgFromFile(String login){
+        try (FileInputStream fis = new FileInputStream("history_" + login + ".txt");) {
+            byte[] arr = new byte[8192];
+            while (fis.read(arr) > 0) {
+//                System.out.print(new String(arr));
+                textArea.appendText(new String(arr));
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

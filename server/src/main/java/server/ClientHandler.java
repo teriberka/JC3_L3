@@ -70,7 +70,8 @@ public class ClientHandler {
                                     socket.setSoTimeout(0);
 
                                     //==============//
-                                    sendMsg(SQLHandler.getMessageForNick(nick));
+                                    // задание 2 | для загрузки сообщений из файла отключаем вычитывание истории из базы
+//                                    sendMsg(SQLHandler.getMessageForNick(nick));
                                     //==============//
 
                                     break;
