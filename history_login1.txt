@@ -1,0 +1,123 @@
+[ nick1 ] private [ nick2 ]: 111
+[ nick1 ] private [ zorro ]: asdfasdf
+[ nick1 ] private [ nick2 ]: hello
+[ nick3 ] private [ nick1 ]: hello
+nick3 : hello
+nick1 : hello
+[ nick3 ] private [ nick1 ]: test message
+zorro :  fsadfasdf 
+zorro : a sdfasdf s
+zorro : asd fasd fsad
+zzzzzzzz : sdf sdaf 
+zzzzzzzz : as df sdaf
+zzzzzzzz : as df asd
+zorro : 123 123 12
+zorro : 1 231 2312 3
+zorro : 1 2312 31
+zzzzzzzz : sdf safd 
+zorro : dsfa sdf asd
+zorro : 12312 3123 123 123
+nick1 : test
+nick1 : write some msg
+nick2 : test
+nick2 : trym
+nick2 : wapa
+nick1 : test
+
+nick1: test
+nick1: trym
+nick1: whapha
+[ nick1 ] private [ nick2 ]: 111
+[ nick1 ] private [ zorro ]: asdfasdf
+[ nick1 ] private [ nick2 ]: hello
+[ nick3 ] private [ nick1 ]: hello
+nick3 : hello
+nick1 : hello
+[ nick3 ] private [ nick1 ]: test message
+zorro :  fsadfasdf 
+zorro : a sdfasdf s
+zorro : asd fasd fsad
+zzzzzzzz : sdf sdaf 
+zzzzzzzz : as df sdaf
+zzzzzzzz : as df asd
+zorro : 123 123 12
+zorro : 1 231 2312 3
+zorro : 1 2312 31
+zzzzzzzz : sdf safd 
+zorro : dsfa sdf asd
+zorro : 12312 3123 123 123
+nick1 : test
+nick1 : write some msg
+nick2 : test
+nick2 : trym
+nick2 : wapa
+nick1 : test
+nick1 : test
+nick1 : trym
+nick1 : whapha
+
+[ nick1 ] private [ nick2 ]: 111
+[ nick1 ] private [ zorro ]: asdfasdf
+[ nick1 ] private [ nick2 ]: hello
+[ nick3 ] private [ nick1 ]: hello
+nick3 : hello
+nick1 : hello
+[ nick3 ] private [ nick1 ]: test message
+zorro :  fsadfasdf 
+zorro : a sdfasdf s
+zorro : asd fasd fsad
+zzzzzzzz : sdf sdaf 
+zzzzzzzz : as df sdaf
+zzzzzzzz : as df asd
+zorro : 123 123 12
+zorro : 1 231 2312 3
+zorro : 1 2312 31
+zzzzzzzz : sdf safd 
+zorro : dsfa sdf asd
+zorro : 12312 3123 123 123
+nick1 : test
+nick1 : write some msg
+nick2 : test
+nick2 : trym
+nick2 : wapa
+nick1 : test
+nick1 : test
+nick1 : trym
+nick1 : whapha
+
+nick1: test
+[ nick1 ] private [ nick2 ]: 111
+[ nick1 ] private [ zorro ]: asdfasdf
+[ nick1 ] private [ nick2 ]: hello
+[ nick3 ] private [ nick1 ]: hello
+nick3 : hello
+nick1 : hello
+[ nick3 ] private [ nick1 ]: test message
+zorro :  fsadfasdf 
+zorro : a sdfasdf s
+zorro : asd fasd fsad
+zzzzzzzz : sdf sdaf 
+zzzzzzzz : as df sdaf
+zzzzzzzz : as df asd
+zorro : 123 123 12
+zorro : 1 231 2312 3
+zorro : 1 2312 31
+zzzzzzzz : sdf safd 
+zorro : dsfa sdf asd
+zorro : 12312 3123 123 123
+nick1 : test
+nick1 : write some msg
+nick2 : test
+nick2 : trym
+nick2 : wapa
+nick1 : test
+nick1 : test
+nick1 : trym
+nick1 : whapha
+nick1 : test
+
+nick1: test
+nick1: test2
+nick1: нуын
+nick1: test
+nick1: test
